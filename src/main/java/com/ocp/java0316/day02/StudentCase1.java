@@ -1,7 +1,5 @@
 package com.ocp.java0316.day02;
 
-import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
-
 public class StudentCase1 {
     public static void main(String[] args) {
         //未加入成績
