@@ -12,7 +12,6 @@ public class ScoreSystemMethod {
         this.mathScore = mathScore;
     }
     
-    
     /*設計方法*/
     int getSum(){
         /*int sum = chineseScore + mathScore;
