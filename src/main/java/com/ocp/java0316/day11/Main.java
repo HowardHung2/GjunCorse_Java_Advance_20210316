@@ -22,7 +22,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int idx = sc.nextInt();
         switch(idx){
-             case 1:
+            case 1:
                 System.out.println(Arrays.toString(getEmployees()));
                 break;
             case 2:
