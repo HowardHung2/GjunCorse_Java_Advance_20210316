@@ -2,6 +2,7 @@ package com.ocp.java0316.day23;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.function.Predicate;
 
 public class SetDemo4 {
     public static void main(String[] args) {
@@ -14,9 +15,10 @@ public class SetDemo4 {
         scores.add(-150);
         System.out.println(scores);
         // 用 Java 8 計算國, 英, 數 的總分
+        Predicate<Integer> p = score -> (score>=0 && score<=100);
         int sum = scores.stream()
-                .filter(Score::isValid) // score -> score>=0 && score<=100 為簡化主程式的驗證機制，額外寫一個Score的類別去驗證是否為分數
-                .mapToInt(Integer :: intValue)
+                .filter(p)// score -> score>=0 && score<=100 為簡化主程式的驗證機制，額外寫一個Score的類別去驗證是否為分數
+                .mapToInt(Integer::intValue)
                 .sum();
         System.out.println(sum);
     }
