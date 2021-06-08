@@ -1,6 +1,6 @@
 package test_square;
 
-import day29_assert.Square;
+import com.ocp.java0316.day29_assert.Square;
 import org.junit.Assert;
 import org.junit.Test;
 

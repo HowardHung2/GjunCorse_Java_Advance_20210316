@@ -1,6 +1,6 @@
 package test_power;
 
-import day29_assert.Power;
+import com.ocp.java0316.day29_assert.Power;
 import org.junit.Assert;
 import org.junit.Test;
 
